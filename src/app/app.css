@@ -1,0 +1,20 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #1A2332;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #5C6670;
+}
