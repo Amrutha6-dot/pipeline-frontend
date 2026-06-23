@@ -36,6 +36,7 @@
       <h4>{{ task.title }}</h4>
       <p>{{ task.description }}</p>
       <div class="task-actions">
+        <button (click)="moveTask(task, 'in-progress')">← Back to In Progress</button>
         <button class="delete-btn" (click)="deleteTask(task.id)">Delete</button>
       </div>
     </div>
