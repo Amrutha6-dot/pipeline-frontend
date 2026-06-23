@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - - name: Run tests
+      - name: Run tests
         run: npm test -- --run
 
       - name: Build
@@ -44,7 +44,5 @@ jobs:
         if: failure() && steps.build.outcome == 'failure'
         run: |
           echo "Build failed — rollback triggered"
-          echo "Last successful deployment remains live on GitHub Pages"
+          echo "Previous deployment remains live on GitHub Pages"
           echo "Failed commit: ${{ github.sha }}"
-          echo "Rollback: previous gh-pages deployment is still active"
-          exit 0
